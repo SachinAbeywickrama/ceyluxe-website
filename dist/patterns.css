@@ -1,0 +1,52 @@
+/* User-provided botanical artwork: decorative backgrounds only.
+   Opaque green gradients keep the text clear in either colour theme. */
+.science,.packaging,.wholesale,.footer{
+  --focus:var(--pastel-grey-yellow);
+  background-color:var(--dark-turquoise);
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:var(--light-orange);
+}
+/* Image 1: fine texture below the newsletter and large wordmark. */
+.footer{
+  background-image:linear-gradient(rgba(18,59,42,.82),rgba(18,59,42,.92)),url('assets/pattern-footer.jpg');
+  background-position:center top;
+}
+.footer-wordmark{opacity:.9}
+/* Image 2: larger motifs frame the wholesale message. */
+.wholesale{
+  background-image:linear-gradient(90deg,rgba(18,59,42,.66),rgba(18,59,42,.88) 35%,rgba(18,59,42,.88) 65%,rgba(18,59,42,.66)),url('assets/pattern-wholesale.jpg');
+  background-position:center;
+  padding-block:88px;
+}
+.wholesale h2,.packaging h2{color:var(--light-orange)}
+.wholesale p,.packaging p{color:var(--pastel-grey-yellow)}
+.wholesale .button{background:var(--gold);color:var(--gold-ink)}
+.wholesale .button:hover{background:var(--pastel-grey-yellow);color:var(--dark-turquoise)}
+/* Image 3: visible around the tin, fading into solid green behind the copy. */
+.packaging{
+  background-image:linear-gradient(90deg,rgba(18,59,42,.45),rgba(18,59,42,.7) 38%,#123b2a 64%),url('assets/pattern-packaging.jpg');
+  background-position:left center;
+}
+.packaging-grid>img{
+  max-width:440px;
+  max-height:none;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  justify-self:center;
+  mix-blend-mode:normal;
+  border-radius:6px;
+  border:1px solid rgba(215,208,174,.3);
+  box-shadow:0 14px 40px rgba(0,0,0,.12);
+}
+/* Image 4: a quiet backdrop for the three science columns. */
+.science{
+  background-image:linear-gradient(rgba(18,59,42,.89),rgba(18,59,42,.89)),url('assets/pattern-science.jpg');
+  background-position:center;
+}
+.science .three-columns article{border-color:rgba(215,208,174,.25)}
+@media(max-width:600px){
+  .wholesale{padding-block:58px}
+  .wholesale{background-image:linear-gradient(rgba(18,59,42,.83),rgba(18,59,42,.83)),url('assets/pattern-wholesale.jpg')}
+  .packaging{background-image:linear-gradient(180deg,rgba(18,59,42,.55),rgba(18,59,42,.68) 35%,#123b2a 65%),url('assets/pattern-packaging.jpg');background-position:center top}
+}

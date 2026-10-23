@@ -1,0 +1,104 @@
+/* Homepage art direction. Shared controls and brand tokens stay in the base files. */
+.editorial-home{--photo-edge:var(--ivory);--soft-gold:rgba(176,138,60,.13)}
+.hero-backdrop{position:relative;background:radial-gradient(ellipse at 15% 68%,var(--soft-gold),transparent 55%);isolation:isolate}
+.hero-backdrop:before{content:'';position:absolute;right:0;top:0;width:44%;height:100%;background:linear-gradient(90deg,var(--ivory),transparent),url('assets/pattern-footer.jpg') center/700px;opacity:.065;z-index:-1;pointer-events:none}
+.hero{gap:72px;padding-block:58px 68px}
+.hero h1{font-size:clamp(62px,6.7vw,96px);line-height:.98;letter-spacing:-.045em}
+.hero-image{box-shadow:0 20px 55px rgba(18,40,24,.12);border:1px solid rgba(176,138,60,.25)}
+.hero-copy{padding-bottom:0}
+.hero-notes{display:flex;align-items:center;gap:15px;margin-top:30px;padding-top:24px;border-top:1px solid var(--line)}
+.botanical-mark{font-size:37px;line-height:1;color:var(--gold)}
+.hero-copy .hero-footnote{margin:0;line-height:1.8;font-size:8px}
+.text-link{display:inline-flex;align-items:center;gap:22px;font-size:11px;line-height:1.6;text-underline-offset:6px;text-decoration-thickness:1px}
+.text-link:hover{text-decoration-color:var(--gold)}
+.hero-notes .text-link{margin-left:auto;font-size:10px}
+.attributes{background:var(--card)}
+.attributes span:before{content:'✧';color:var(--gold);font-size:13px;margin-right:10px;vertical-align:middle}
+.jewel-story{display:grid;grid-template-columns:1.1fr 1fr;gap:90px;align-items:center;padding-block:100px 90px}
+.jewel-collage{position:relative;min-width:0;padding:0 70px 48px 0}
+.jewel-portrait{margin:0;position:relative;aspect-ratio:4/5;border-radius:48% 48% 3px 3px;overflow:hidden;background:var(--card)}
+.jewel-portrait img{width:100%;height:100%;object-fit:cover;mask-image:linear-gradient(#000 66%,transparent 100%)}
+.jewel-portrait figcaption{position:absolute;bottom:22px;left:20px;width:50%;text-align:left;font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.3;color:var(--text)}
+.tea-inset{position:absolute;width:42%;right:0;bottom:0;margin:0;transform:rotate(6deg);padding:9px 9px 13px;background:var(--ivory);border:1px solid var(--line);box-shadow:0 12px 30px rgba(0,0,0,.12)}
+.tea-inset img{width:100%;aspect-ratio:1;object-fit:cover}
+.tea-inset figcaption{font-family:var(--serif);font-size:16px;text-align:center;margin-top:8px;color:var(--text)}
+.collage-seal{position:absolute;left:-18px;top:20%;width:94px;height:94px;border:1px solid var(--gold);outline:5px solid var(--ivory);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:8px;letter-spacing:.17em;line-height:1.4;background:var(--ivory);color:var(--text);transform:rotate(-12deg)}
+.collage-seal i{font-family:var(--serif);font-size:19px;letter-spacing:0}
+.story-copy h2{font-size:clamp(34px,3.4vw,49px)}
+.story-copy h2 em{color:var(--muted);font-weight:400}
+.story-copy>p:not(.eyebrow){max-width:410px}
+.story-notes{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin:30px 0;border-block:1px solid var(--line);padding-block:20px}
+.story-notes .eyebrow{font-size:8px;color:var(--muted)}
+.story-notes p{font-size:12px;line-height:1.7;margin:8px 0 0}
+.collection{padding-top:35px}
+.collection-heading{position:relative;padding-top:28px;border-top:1px solid var(--line)}
+.section-number-label{display:block;font-size:8px;letter-spacing:.16em;color:var(--muted);text-align:left;margin-bottom:25px}
+.collection-heading h2{font-size:clamp(36px,4.1vw,58px)}
+.product{padding:10px;border:1px solid var(--line);border-radius:8px;background:linear-gradient(160deg,var(--card),var(--ivory));transition:border-color .25s,box-shadow .25s}
+.product:hover,.product:focus-within{border-color:var(--gold);box-shadow:0 12px 28px rgba(0,0,0,.055)}
+.product figure{border-radius:5px;margin-bottom:22px}
+.product figure>img{transition:transform .7s,opacity .5s}
+.product:hover figure>img:first-child{transform:scale(1.035)}
+.product-info{padding:0 9px 9px}
+.product figure .product-detail{position:absolute;inset:0;opacity:0;object-position:center 55%}
+@media(hover:hover){.product:hover .product-detail,.product:focus-within .product-detail{opacity:1}}
+.product figcaption{font-size:6px;letter-spacing:.13em;max-width:95%}
+.science{position:relative;overflow:hidden}
+.science:after{content:'✳';position:absolute;right:-25px;top:-95px;font-family:var(--serif);font-size:330px;line-height:1;color:var(--pastel-grey-yellow);opacity:.035;pointer-events:none}
+.science>.container{position:relative;z-index:1}
+.science h2{max-width:730px}
+.ritual .section-heading{margin-bottom:42px}
+.ritual .three-columns{gap:28px}
+.ritual .three-columns article{padding:0;border:0}
+.step-photo{position:relative;margin-bottom:24px;overflow:hidden;aspect-ratio:1.2;border-radius:4px}
+.step-photo img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.step-photo:hover img{transform:scale(1.04)}
+.step-photo span{position:absolute;left:16px;bottom:14px;display:grid;place-items:center;width:40px;height:40px;background:#fcfaf5e8;color:#123b2a;border-radius:50%;font-family:var(--serif);font-size:21px}
+.ritual article:nth-child(2) .step-photo{border-radius:48% 48% 4px 4px}
+.packaging{padding-block:90px}
+.packaging-grid{grid-template-columns:1.1fr 1fr;gap:90px}
+.packaging-visual{position:relative;min-width:0;padding:10px}
+.packaging-visual:before{content:'';position:absolute;inset:0;border:1px solid rgba(215,208,174,.45);transform:rotate(-3deg);border-radius:5px;pointer-events:none}
+.packaging-visual>img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:4px;box-shadow:0 18px 35px rgba(0,0,0,.2)}
+.gift-tag{position:absolute;z-index:1;right:-18px;top:-20px;display:grid;place-content:center;width:94px;height:94px;border-radius:50%;background:var(--pastel-grey-yellow);color:#123b2a;text-align:center;text-transform:uppercase;font-size:8px;letter-spacing:.12em;transform:rotate(10deg)}
+.gift-tag i{font-family:var(--serif);font-size:25px;text-transform:none;letter-spacing:0;line-height:1.2}
+.packaging .button{margin-top:28px}
+.wholesale{margin-top:36px;text-align:left}
+.wholesale-grid{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:100px}
+.wholesale-copy p{max-width:500px}
+.wholesale-photo{position:relative;margin:0;max-width:410px;justify-self:end;width:100%;aspect-ratio:1.05}
+.wholesale-photo img{width:100%;height:100%;object-fit:cover;border-radius:50% 50% 2px 2px;mask-image:linear-gradient(#000 55%,transparent 100%)}
+.wholesale-photo figcaption{position:absolute;bottom:5px;left:0;right:0;color:var(--pastel-grey-yellow);text-align:center;font-family:var(--serif);font-style:italic;font-size:23px}
+.inquiry{display:grid;grid-template-columns:.95fr 1.05fr;gap:100px;padding-block:100px 75px}
+.inquiry h2{max-width:420px;font-size:clamp(34px,3.4vw,46px)}
+.inquiry-intro>p{font-size:13px}
+.inquiry-photo{max-width:290px;height:165px;margin-top:28px;overflow:hidden;mask-image:linear-gradient(90deg,#000 35%,transparent 100%)}
+.inquiry-photo img{width:100%;height:100%;object-fit:cover;object-position:center 66%;border-radius:4px}
+.inquiry form{align-self:center;padding:30px;background:var(--card);border:1px solid var(--line);border-radius:6px}
+.inquiry input,.inquiry textarea{background:var(--ivory)}
+.faq{display:grid;grid-template-columns:.95fr 1.05fr;column-gap:100px}
+.faq h2{grid-row:1/4}
+.faq details{grid-column:2}
+[data-theme=dark] .hero-backdrop:before{opacity:.13}
+[data-theme=dark] .hero-image{box-shadow:0 20px 55px rgba(0,0,0,.16)}
+@media(max-width:1100px){
+ .hero{gap:35px}.hero h1{font-size:67px}
+ .jewel-story{gap:50px;padding-block:75px}.jewel-collage{padding-right:35px}.collage-seal{width:75px;height:75px;left:-12px;font-size:7px}
+ .story-notes{gap:12px}.tea-inset{width:46%}.tea-inset figcaption{font-size:14px}
+ .packaging-grid,.wholesale-grid{gap:50px}.gift-tag{width:78px;height:78px;right:-8px}
+ .inquiry,.faq{gap:45px}.inquiry form{padding:22px}
+}
+@media(max-width:600px){
+ .hero{padding-block:38px 40px;gap:32px}.hero h1{font-size:67px}.hero-notes{margin-top:25px;padding-top:20px;gap:12px}.hero-notes .text-link{font-size:9px;gap:8px}
+ .hero-backdrop:before{width:100%;opacity:.035}.attributes span:before{display:block;margin:0 0 3px;line-height:1}
+ .jewel-story{grid-template-columns:1fr;gap:38px;padding-block:55px}.jewel-collage{padding:0 45px 28px 10px;max-width:380px;width:100%;margin-inline:auto}.jewel-portrait{aspect-ratio:1/1.08}.tea-inset{width:42%;right:5px}.collage-seal{left:0;top:13%}.jewel-portrait figcaption{font-size:21px;bottom:18px}.story-copy h2{font-size:36px}.story-copy .eyebrow{font-size:8px}.story-notes{margin-block:24px}
+ .collection{padding-top:20px}.collection-heading{padding-top:20px}.section-number-label{font-size:7px;margin-bottom:20px}.collection-heading h2{font-size:38px}
+ .product{padding:10px}.product-info{padding-inline:8px}.product-grid{gap:24px}.product figure{aspect-ratio:1.1}
+ .ritual .three-columns{gap:35px}.step-photo{aspect-ratio:1.28;margin-bottom:20px}.ritual .three-columns h3{font-size:27px}.ritual .section-heading{margin-bottom:30px}
+ .packaging{padding-block:60px}.packaging-grid{grid-template-columns:1fr;gap:35px}.packaging-visual{margin-right:6px}.gift-tag{top:-15px;right:-10px;width:78px;height:78px}.packaging .button{margin-top:22px}
+ .wholesale{margin-top:24px;padding-block:55px}.wholesale-grid{grid-template-columns:1fr;gap:35px}.wholesale-copy{text-align:center}.wholesale-photo{max-width:300px;justify-self:center}.wholesale h2{font-size:34px}.wholesale-photo figcaption{font-size:21px}
+ .inquiry{grid-template-columns:1fr;gap:26px;padding-block:55px}.inquiry h2{font-size:34px}.inquiry-photo{display:none}.inquiry form{padding:20px;width:100%}
+ .faq{display:block;padding-bottom:55px}.faq h2{margin-bottom:15px}
+}
+@media(max-width:360px){.hero h1{font-size:60px}.hero-notes{flex-wrap:wrap}.hero-notes .text-link{margin-left:48px}.jewel-collage{padding-right:32px}.tea-inset figcaption{font-size:12px}.story-copy h2{font-size:32px}.inquiry form{padding:15px}}
+@media(prefers-reduced-motion:reduce){.editorial-home *{animation:none!important;transition:none!important}.product:hover figure>img:first-child,.step-photo:hover img{transform:none}}

@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+qa/*.png
+qa/report.json
+
+.openai/
+.env
+.env.*
+!.env.example
+*.log
